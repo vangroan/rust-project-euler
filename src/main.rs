@@ -66,4 +66,14 @@ fn problem_003() -> i64 {
 }
 
 
+/// A palindromic number reads the same both ways. The largest palindrome made 
+/// from the product of two 2-digit numbers is 9009 = 91 × 99.
+///
+/// Find the largest palindrome made from the product of two 3-digit numbers.
+#[allow(dead_code)]
+fn problem_004() -> i64{
+    0
+}
+
+
 fn main() {}
