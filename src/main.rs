@@ -72,7 +72,17 @@ fn problem_003() -> i64 {
 /// Find the largest palindrome made from the product of two 3-digit numbers.
 #[allow(dead_code)]
 fn problem_004() -> i64{
-    0
+    let mut max = 0;
+    for i in (100..999).rev() {
+        for j in (100..999).rev() {
+            let p = i * j;
+            if max < p && utils::is_palindrome(p) {
+                max = p;
+            }
+        }
+    }
+
+    max
 }
 
 

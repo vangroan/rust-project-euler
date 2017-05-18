@@ -20,5 +20,5 @@ fn test_problem_003() {
 
 #[test]
 fn test_problem_004() {
-    assert_eq!(problem_004(), -1);
+    assert_eq!(problem_004(), 906609);
 }
