@@ -93,7 +93,21 @@ fn problem_004() -> i64{
 /// numbers from 1 to 20?
 #[allow(dead_code)]
 fn problem_005() -> i64 {
-    0
+    let mut n = 20;
+    loop {
+        let mut success = true;
+        for i in 1..21 {
+            if n % i != 0 {
+                success = false;
+                break;
+            }
+        }
+
+        if success {
+            return n;
+        }
+        n += 1;
+    }
 }
 
 
